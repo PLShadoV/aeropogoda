@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#090e16">
   <meta name="description" content="AeroPogoda — szczegółowy, interaktywny meteogram. Temperatura, wiatr, opady i zachmurzenie co 15 minut.">
-  <title>AeroPogoda • Meteogram 9.1</title>
+  <title>AeroPogoda • Meteogram 12.0</title>
 
 
 <style>:root{--bg:#090e16;--surface:#111824;--surface2:#141e2c;--surface3:#1a2535;--stroke:#263348;--text:#edf3fa;--muted:#91a0b6;--dim:#60748f;--blue:#5aabff;--cyan:#43d4db;--violet:#a88afe;--orange:#ffaa6f;--yellow:#ffd37c;--green:#70dfac;--white:#e7effc}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:14px;-webkit-font-smoothing:antialiased}button,input{font:inherit}button{cursor:pointer;-webkit-tap-highlight-color:transparent}button:focus-visible,input:focus-visible,.chart-scroll:focus-visible{outline:2px solid var(--blue);outline-offset:3px}button:disabled{opacity:.45;cursor:not-allowed}a{color:#83c5ff}svg{display:block}.hidden{display:none!important}.app-shell{display:grid;grid-template-columns:239px minmax(0,1fr);min-height:100vh}.side-nav{position:sticky;top:0;height:100vh;border-right:1px solid #202c3d;background:linear-gradient(180deg,#101825,#0b111a 65%);display:flex;flex-direction:column;padding:28px 15px 22px}.brand{padding:0 9px 47px;display:flex;align-items:center;gap:11px;font-weight:750;font-size:19px;letter-spacing:-.7px}.brand-logo{width:40px;height:40px;display:grid;place-items:center;border-radius:12px;background:linear-gradient(145deg,#2369a7,#122940);color:#92d5ff}.brand-logo svg{width:28px;height:28px}.brand small{font-size:9px;display:block;font-weight:600;letter-spacing:1.4px;color:#7c8da5;margin-top:4px}.accent{color:#66b7ff}.side-label{font-size:10px;font-weight:750;letter-spacing:1.9px;color:#586b84;padding:0 17px 14px}.side-links{display:flex;flex-direction:column;gap:5px}.side-link{width:100%;text-align:left;display:flex;align-items:center;gap:14px;border:1px solid transparent;border-radius:11px;background:transparent;color:#93a5bc;padding:12px 16px;font-weight:550;transition:.15s}.side-link .ico{font-size:22px;line-height:20px;width:23px;text-align:center;font-weight:500}.side-link:hover{background:#182338;color:#d5ecff}.side-link.active{background:linear-gradient(90deg,#193a5b,#16283f);border-color:#2a4e72;color:#85caff}.side-bottom{margin-top:auto}.side-hint{background:#141f2e;border:1px solid var(--stroke);border-radius:13px;padding:16px 12px;display:flex;gap:11px}.side-hint strong{font-size:12px}.side-hint p{font-size:11px;line-height:1.6;color:var(--muted);margin:6px 0 0}.live-dot{background:#5ce3b7;box-shadow:0 0 11px #43dbaa50;width:7px;height:7px;border-radius:50%;flex-shrink:0;display:inline-block}.side-hint .live-dot{margin-top:5px}.source{color:#7f90a9;font-size:11px;text-align:center;margin-top:17px}.work-area{min-width:0}.topbar{height:79px;border-bottom:1px solid #1c2939;display:flex;justify-content:space-between;align-items:center;padding:0 clamp(18px,3vw,46px);gap:12px}.head-left,.head-right{display:flex;align-items:center;gap:10px}.head-left{min-width:0}.head-right{flex-shrink:0}.place-wrap{position:relative}.place-btn{display:flex;align-items:center;gap:13px;border:1px solid #34445b;border-radius:13px;padding:10px 15px;background:#151f2e;min-width:230px;max-width:340px;color:#f1f7ff;font-weight:700;font-size:15px}.place-btn #placeName{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.place-btn .search-ico,.icon-button svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round}.chevron{margin-left:auto;color:#8296b0;font-size:19px}.icon-button{width:40px;height:40px;display:grid;place-items:center;background:#151f2e;border:1px solid #2c3b51;border-radius:11px;color:#c6d8ed;font-size:23px}.icon-button:hover,.unit-btn:hover{border-color:#6dbaff;color:#fff}.unit-btn{min-width:60px;background:#16253a;border:1px solid #344c67;border-radius:10px;color:#a8d9ff;height:39px;font-size:12px;font-weight:750}.update-label{font-size:12px;color:#97a9bf;display:flex;gap:9px;align-items:center;margin-right:15px}.mobile-brand{display:none;font-size:18px;font-weight:800;letter-spacing:-.5px}.search-popover{position:absolute;top:55px;left:0;width:min(360px,calc(100vw - 34px));padding:18px;background:#172233;border:1px solid #354e68;border-radius:15px;box-shadow:0 20px 60px #000b;z-index:50}.search-popover label{display:block;margin-bottom:9px;font-size:12px;color:#9aafc5}.search-popover input{background:#0a111c;border:1px solid #34506c;color:white;padding:12px 13px;width:100%;border-radius:9px}.search-results{max-height:260px;overflow:auto;margin:7px -7px}.search-results button{display:block;text-align:left;width:100%;border:0;background:transparent;color:#ecf3fd;border-radius:9px;padding:11px 9px}.search-results button:hover{background:#253a55}.search-results small{display:block;margin-top:4px;color:#93a6c0}.small-muted{font-size:11px;color:#7b8da4;margin-top:8px}.main-content{max-width:1540px;margin:0 auto;padding:32px clamp(16px,3vw,46px) 26px}.page-heading{display:flex;align-items:center;justify-content:space-between;gap:20px;margin-bottom:24px}.eyebrow{font-size:11px;color:#7bc6ff;letter-spacing:2.1px;font-weight:800;margin-bottom:9px}.page-heading h1{font-size:clamp(24px,2.6vw,34px);line-height:1.2;margin:0;font-weight:760;letter-spacing:-.95px}.page-heading p{margin:8px 0 0;color:#91a2ba;font-size:13px}.location-meta{font-size:12px;color:#71849d;white-space:nowrap}.message{border:1px solid #71503f;background:#30241f;color:#ffcfaa;padding:13px 15px;border-radius:11px;margin-bottom:17px;line-height:1.5}.message button{border:1px solid #bd7a50;color:#fff;background:#5b3524;border-radius:7px;padding:6px 10px;margin-left:9px}.hero-cards{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-bottom:20px}.metric-card{text-align:left;position:relative;overflow:hidden;min-height:147px;border:1px solid #2a374b;border-radius:16px;padding:19px 20px 18px;background:linear-gradient(155deg,#192438,#111a27);color:var(--text);transition:transform .12s,border .12s}.metric-card:hover{transform:translateY(-2px);border-color:#648ab0}.metric-top{display:flex;align-items:center;justify-content:space-between;font-size:13px;font-weight:600;color:#a1b3c8}.metric-glyph{font-size:24px;line-height:18px;color:#7fbaff}.metric-main{display:flex;align-items:baseline;gap:6px;font-size:clamp(28px,2.85vw,38px);letter-spacing:-1.3px;margin-top:13px;font-weight:760}.metric-unit{font-size:16px;color:#a6b8c9;font-weight:550;letter-spacing:0}.metric-foot{display:block;color:#8095ad;font-size:12px;margin-top:8px}.metric-line{position:absolute;bottom:0;left:0;right:0;height:3px}.blue-line{background:linear-gradient(90deg,#4a9df4,#448de800)}.cyan-line{background:linear-gradient(90deg,#37c6d5,#48c6d800)}.violet-line{background:linear-gradient(90deg,#9e8cfc,#a88afe00)}.gray-line{background:linear-gradient(90deg,#d8e0ec,#d8e0ec00)}.chart-panel{background:#111a28;border:1px solid #2a374a;border-radius:18px;overflow:hidden;box-shadow:0 13px 34px #00000021}.chart-toolbar{padding:19px 19px 10px}.chart-toolbar-top{display:flex;justify-content:space-between;align-items:center;gap:15px}.chart-label{display:flex;align-items:center;gap:12px}.chart-pulse{width:37px;height:37px;display:grid;place-items:center;border:1px solid #294b72;background:#172f49;border-radius:11px;color:#89c8ff;font-size:22px}.chart-label strong{font-size:15px;display:block}.chart-label small{font-size:11px;color:#8096b0;display:block;margin-top:5px}.timeline-time{color:#8499b1;font-size:11px;white-space:nowrap}.toolbar-controls{margin-top:19px;display:flex;justify-content:space-between;align-items:center;gap:13px}.segmented{display:inline-flex;align-items:center;border:1px solid #293b51;background:#0c1522;padding:4px;border-radius:10px;gap:2px}.segmented button{background:none;border:0;border-radius:7px;color:#8799b0;font-weight:700;padding:9px 17px;white-space:nowrap;font-size:12px}.segmented button:hover{color:white;background:#1a2b40}.segmented button.active{background:#224669;color:#a9dfff;box-shadow:0 1px 4px #0004}.segmented button:disabled{opacity:.28}.small-segment button{padding:9px 13px}.chart-legend{padding:12px 17px 15px;display:flex;align-items:center;gap:17px;flex-wrap:wrap;border-bottom:1px solid #253447;min-height:51px}.legend-item{display:flex;gap:7px;align-items:center;color:#a3b3c5;font-size:11px;white-space:nowrap}.legend-dot{height:8px;width:8px;border-radius:50%;display:inline-block}.chart-container{display:flex;min-width:0;position:relative;background:#101925}.track-rail{width:106px;flex:0 0 106px;background:#121d2b;z-index:2;border-right:1px solid #2a3b4e}.track-rail .rail-time{height:48px;display:flex;align-items:flex-end;padding-bottom:11px;padding-left:13px;font-size:10px;color:#6d8299}.rail-block{padding:12px 8px 10px 12px;border-top:1px solid #29394e;display:flex;flex-direction:column;gap:6px;justify-content:space-between}.rail-block .rail-icon{font-size:17px;line-height:1}.rail-block strong{font-size:11px;font-weight:740}.rail-block small{font-size:10px;color:#7188a3;line-height:1.4}.chart-scroll{overflow-x:auto;overflow-y:hidden;flex:1;min-width:0;scrollbar-color:#39526c #132235;scrollbar-width:thin;touch-action:auto;overscroll-behavior-x:contain;cursor:crosshair}.chart-scroll svg{overflow:visible;max-width:none;user-select:none;-webkit-user-select:none;touch-action:auto}.chart-scroll svg text{font-family:inherit}.chart-footer{padding:13px 17px;display:flex;justify-content:space-between;gap:10px;border-top:1px solid #263549;color:#778ca7;font-size:11px}.chart-footer span:first-child{color:#73c7bc}.selection-panel{margin-top:14px;border:1px solid #2b3c52;background:linear-gradient(115deg,#19283a,#131d2a);border-radius:15px;padding:16px 19px;display:flex;align-items:center;gap:25px}.selection-time{display:flex;flex-direction:column;gap:4px;flex:0 0 180px;border-right:1px solid #39485a;padding-right:19px}.selection-eyebrow{font-size:10px;letter-spacing:1.2px;color:#718aab;font-weight:800}.selection-time strong{font-size:17px}.selection-time small{color:#91a5bf;font-size:11px}.selection-values{display:flex;gap:21px;flex-wrap:wrap;align-items:center}.sel-stat{display:flex;flex-direction:column;gap:5px}.sel-stat span{font-size:11px;color:#8197b1}.sel-stat b{font-size:15px;font-weight:760}.details-row{display:grid;grid-template-columns:1.35fr 1fr;gap:14px;margin-top:19px}.subpanel{border:1px solid #263649;border-radius:15px;padding:17px;background:#111a27;min-height:150px}.subhead{display:flex;align-items:center;justify-content:space-between;color:#8da3bc;font-size:10px;font-weight:800;letter-spacing:1.6px}.subhead-icon{font-size:19px;color:#7093b8}.daily-cards{display:grid;grid-template-columns:repeat(5,1fr);gap:6px;margin-top:17px}.day-card{text-align:center;border-right:1px solid #263748;display:flex;flex-direction:column;gap:8px}.day-card:last-child{border:0}.day-card strong{font-size:12px}.day-card .weather-icon{font-size:24px}.day-card span{font-size:12px;color:#a0b3ca}.insight-list{margin-top:13px;display:grid;gap:14px}.insight-item{display:flex;align-items:center;justify-content:space-between;gap:13px;font-size:12px;color:#a5b8ce}.insight-item b{color:#eef3fc;font-size:14px}.credits{text-align:center;color:#566c83;font-size:11px;line-height:1.7;padding:27px 10px 10px}.credits a{color:#799fbf}.mobile-nav{display:none}.detail-explanation{border:1px solid #334761;background:#162437;color:#9cb6d1;padding:13px 16px;border-radius:12px;margin-top:14px;font-size:13px;line-height:1.65}.map-box{margin:16px 0 4px;position:relative}.map-box iframe{width:100%;height:480px;border:1px solid #32465d;border-radius:14px;filter:saturate(.83)}.map-box .map-note{color:#97aac0;font-size:12px;margin-top:12px}.map-box a{display:inline-block;margin-top:13px}.empty-chart{padding:50px 20px;text-align:center;color:#8ea6bd}.chart-scroll .cross-line{pointer-events:none}.chart-tooltip{position:fixed;z-index:100;pointer-events:none;background:#1b2b40;color:white;border:1px solid #476381;box-shadow:0 8px 32px #0008;padding:10px 13px;border-radius:10px;font-size:11px;max-width:210px;line-height:1.65}.chart-tooltip strong{font-size:12px}.spinner{display:inline-block;width:14px;height:14px;border:2px solid #46627c;border-top-color:#79c1ff;border-radius:50%;animation:spin .7s linear infinite;vertical-align:middle}@keyframes spin{to{transform:rotate(360deg)}}
@@ -208,6 +208,59 @@
  .saved-place-group{margin-top:11px}
  .saved-place-row{min-height:42px}
 }
+
+/* 10.0: select alergenu + przewodnik ubran dzieci */
+.allergy-picker{display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin:12px 0 4px}.allergy-picker label{color:#a9bfd6;font-size:11px;font-weight:750}.allergy-select{appearance:auto;background:#14273b;border:1px solid #426481;color:#eaf7ff;border-radius:9px;padding:9px 10px;font-weight:720;min-height:39px;min-width:142px;max-width:100%;font-size:12px}.allergy-picker .picker-tip{font-size:10px;color:#8aa5c1}.allergen-row.is-selected{border-color:#66bbff;background:#193048}.allergen-pick{display:flex;align-items:flex-start;flex-direction:column;gap:2px;padding:0;border:0;background:transparent;color:#e8f2ff;min-width:0;text-align:left;font-weight:750}.allergen-pick small{display:block;font-size:10px;color:#9bb0c7;font-weight:500}.allergen-pick:focus-visible{outline:2px solid #68baff;border-radius:3px}
+.child-panel{margin-top:14px;background:#111a28;border:1px solid #2d4059;border-radius:18px;padding:16px;display:grid;gap:14px}.child-hero{display:flex;justify-content:space-between;gap:10px;align-items:flex-start}.child-hero h3{font-size:18px;margin:0 0 6px}.child-hero p{margin:0;color:#91a9c2;font-size:12px;line-height:1.55}.child-source-tag{flex-shrink:0;font-size:10px;color:#83bddf;background:#183249;border:1px solid #315e7e;padding:8px;border-radius:9px}.child-controls{display:grid;grid-template-columns:1fr 1fr 1fr;gap:11px}.child-control{border:1px solid #2e4158;border-radius:13px;background:#131f2e;padding:10px;min-width:0}.child-control label{display:block;color:#8cb5d5;font-size:10px;font-weight:850;text-transform:uppercase;letter-spacing:.7px;margin-bottom:7px}.child-control select{appearance:auto;width:100%;background:#0d1827;color:#ecf5ff;border:1px solid #385773;padding:10px 9px;border-radius:9px;font-weight:750;font-size:12px;min-height:42px}.child-weather{display:flex;flex-wrap:wrap;gap:8px}.child-weather-stat{background:#0e1b2a;border:1px solid #30455f;padding:9px 12px;border-radius:12px;color:#e6f5ff;font-size:13px;font-weight:800}.child-weather-stat span{display:block;color:#8ca9c4;font-size:10px;font-weight:650;margin-bottom:3px}.child-layout{display:grid;grid-template-columns:1.2fr .8fr;gap:12px}.child-card{border-radius:15px;border:1px solid #2c415b;background:linear-gradient(155deg,#172a40,#111b2b);padding:15px}.child-card h4{margin:0 0 7px;font-size:15px}.child-card p{font-size:12px;line-height:1.6;color:#a6bdd2;margin:6px 0 10px}.child-outfits{display:grid;gap:8px;margin-top:12px}.child-outfit{display:flex;gap:11px;align-items:flex-start;border-radius:10px;background:#0f1d2c;border:1px solid #273e57;padding:11px}.child-outfit .outfit-icon{font-size:22px;line-height:1.2}.child-outfit strong{font-size:12px;color:#f0f7ff;display:block}.child-outfit small{font-size:11px;color:#98b2c9;line-height:1.5;display:block;margin-top:3px}.child-warning{border:1px solid #94734b;background:#2d241d;border-radius:12px;padding:12px;color:#ffdeb0;font-size:12px;line-height:1.65}.child-advice{display:grid;gap:9px}.child-advice .tip{background:#101d2d;padding:10px;border-radius:10px;border:1px solid #2b4157;font-size:12px;color:#d2e2f1;line-height:1.55}.child-advice .tip b{display:block;color:#9fd5ff;font-size:11px;margin-bottom:3px}.child-disclaimer{color:#8ea7be;font-size:11px;line-height:1.6}.child-panel a{color:#9bd4ff}.allergy-picker{align-items:center}
+@media(max-width:850px){.child-controls{grid-template-columns:1fr 1fr}.child-control:last-child{grid-column:1/-1}.child-layout{grid-template-columns:1fr}}
+@media(max-width:550px){.mobile-nav button{font-size:8px;letter-spacing:-.2px}.mobile-nav button span{font-size:18px}.child-panel{padding:10px;gap:10px;margin-top:10px}.child-hero h3{font-size:16px}.child-hero{flex-direction:column}.child-controls{gap:7px}.child-control{padding:8px}.child-control select{padding:9px 6px;font-size:11px}.child-weather{gap:5px}.child-weather-stat{font-size:12px;padding:8px 9px}.child-card{padding:12px}.child-outfit{padding:9px}.allergy-picker{gap:6px}.allergy-select{min-width:0;max-width:220px;padding:8px 7px}}
+
+/* 11.0 — moduł szafy: wybieralne zestawy i warstwy */
+.wardrobe-toolbar{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:9px;margin:2px 0 0}
+.wardrobe-toolbar h4{margin:0;font-size:16px}.wardrobe-toolbar p{margin:4px 0 0;font-size:11px;color:#9eb5c9;line-height:1.45}
+.wardrobe-actions{display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+.wardrobe-action{min-height:38px;padding:8px 11px;border:1px solid #38556f;background:#1b324a;color:#c9e7ff;border-radius:10px;font-size:11px;font-weight:750}
+.wardrobe-action.primary{background:#24608e;border-color:#4c9bd0;color:#fff}
+.wardrobe-action:hover{background:#2d5270}.wardrobe-status{font-size:10px;color:#b6d4ea;border:1px solid #324c63;border-radius:999px;padding:5px 9px;background:#193048;white-space:nowrap}
+.wardrobe-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px;align-items:start}
+.wardrobe-group{border-radius:13px;border:1px solid #30435b;background:#101c2d;padding:11px;min-width:0}
+.wardrobe-group.base{grid-column:1/-1}.wardrobe-group h5{font-size:12px;margin:0 0 4px;color:#e7f5ff;display:flex;align-items:center;gap:6px}
+.wardrobe-group p{font-size:10px;color:#89a0b8;margin:0 0 10px;line-height:1.5}
+.wardrobe-options{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}.wardrobe-group.base .wardrobe-options{grid-template-columns:repeat(3,minmax(0,1fr))}
+.wardrobe-option{min-height:65px;text-align:left;display:flex;align-items:flex-start;gap:8px;padding:9px 8px;border:1px solid #34495e;background:#172538;color:#dceaf8;border-radius:10px;position:relative;min-width:0}
+.wardrobe-option:hover{border-color:#6092bc;background:#1d344b}.wardrobe-option[aria-pressed="true"]{border-color:#78c7ff;background:#1b4160;box-shadow:inset 0 0 0 1px #4fa6e0}
+.wardrobe-option[aria-pressed="true"]::after{content:'✓';position:absolute;top:5px;right:6px;color:#a8e5ff;font-size:13px;font-weight:800}
+.wardrobe-option .choice-icon{font-size:23px;line-height:1.1;flex-shrink:0;margin-top:2px}.wardrobe-option .choice-copy{min-width:0;padding-right:4px}
+.wardrobe-option strong{display:block;font-size:11px;line-height:1.25;overflow-wrap:anywhere}.wardrobe-option small{display:block;font-size:10px;color:#a1b6cd;margin-top:4px;line-height:1.35;overflow-wrap:anywhere}
+.wardrobe-option .choice-hint{color:#8ad5ff;font-size:9px;font-weight:700;display:inline-block;margin-top:5px}
+.wardrobe-summary{background:linear-gradient(120deg,#193850,#132538);border:1px solid #3e6686;border-radius:14px;padding:13px}
+.wardrobe-summary-head{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:9px}
+.wardrobe-summary-head strong{font-size:13px}.wardrobe-summary-head span{font-size:10px;color:#91caff}
+.wardrobe-summary-chips{display:flex;gap:6px;flex-wrap:wrap}.wardrobe-summary-chip{font-size:11px;background:#224863;border:1px solid #3a7194;border-radius:999px;padding:6px 9px;color:#e0f4ff}
+.wardrobe-safety{display:grid;gap:7px;margin-top:10px}.wardrobe-safety-note{padding:9px 10px;border-radius:9px;font-size:11px;line-height:1.5;background:#203147;color:#b9d6f0;border:1px solid #39546b}
+.wardrobe-safety-note.alert{border-color:#9b7150;background:#30261e;color:#ffddb6}
+.wardrobe-group-extras .wardrobe-option[aria-pressed="true"]{background:#254c43;border-color:#60bd92}
+@media(max-width:950px){.wardrobe-grid{grid-template-columns:1fr}.wardrobe-group.base{grid-column:auto}}
+@media(max-width:550px){.wardrobe-toolbar{align-items:stretch}.wardrobe-toolbar>div:first-child{width:100%}.wardrobe-actions{width:100%;justify-content:space-between}.wardrobe-action{flex:1;min-width:0;font-size:10px;padding:8px}.wardrobe-grid{gap:8px}.wardrobe-group{padding:10px}.wardrobe-options,.wardrobe-group.base .wardrobe-options{grid-template-columns:repeat(2,minmax(0,1fr));gap:6px}.wardrobe-option{min-height:64px;padding:8px 7px;gap:5px}.wardrobe-option .choice-icon{font-size:20px}.wardrobe-option strong{font-size:10.5px}.wardrobe-option small{font-size:9px}.wardrobe-summary{padding:10px}}
+
+
+.child-cabin{background:#19314a;border:1px solid #41617e;border-radius:11px;padding:10px 13px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}.child-cabin label{font-size:12px;color:#acd6f2;font-weight:700}.child-cabin select{border-radius:9px;background:#101e2d;border:1px solid #4b789b;color:#e6f5ff;padding:8px 10px;font:inherit;max-width:100%}
+/* AeroPogoda 12.0 — ocenianie całego stroju i sprzężone wybory warstw */
+.wardrobe-balance{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:14px;border-radius:13px;border:1px solid #37658d;background:linear-gradient(110deg,#19354d,#11263c)}
+.wardrobe-balance.ok{border-color:#2c8972;background:linear-gradient(110deg,#173d3a,#132837)}
+.wardrobe-balance.cold{border-color:#508bcc;background:linear-gradient(110deg,#193e62,#13283b)}
+.wardrobe-balance.hot{border-color:#bd8559;background:linear-gradient(110deg,#513226,#2d2627)}
+.wardrobe-balance .balance-eyebrow{font-size:9px;letter-spacing:1px;color:#91bad8;font-weight:800;margin-bottom:4px}
+.wardrobe-balance strong{font-size:15px;display:block;color:#f4faff}
+.wardrobe-balance p{margin:6px 0 0;font-size:11px;line-height:1.5;color:#bdd4e8}
+.wardrobe-balance .balance-auto{color:#d9f1ff;font-size:11px;font-weight:700;margin-top:9px;padding:7px 9px;background:#2d587050;border:1px solid #638aa040;border-radius:8px}
+.wardrobe-balance .balance-change{margin-top:8px;font-size:11px;color:#f9d2a6}
+.wardrobe-balance .balance-change span{font-weight:800}
+.balance-button{background:#2d6fa1;color:#f4faff;border:1px solid #6ab0e0;border-radius:10px;padding:11px 12px;font-size:12px;font-weight:800;flex-shrink:0;min-height:42px}
+.balance-button:disabled{background:#20527a66;color:#98c6e3;border-color:#386381;opacity:.7}
+.wardrobe-group.base{border-color:#4277a0}
+@media(max-width:600px){.wardrobe-balance{flex-direction:column;align-items:stretch;padding:11px}.balance-button{width:100%;min-height:40px}}
+
 </style>
 </head>
 <body>
@@ -223,6 +276,7 @@
       <button class="side-link" data-page="cloud"><span class="ico">☁</span>Zachmurzenie</button>
       <button class="side-link" data-page="other"><span class="ico">◫</span>Inne parametry</button>
       <button class="side-link" data-page="allergy"><span class="ico">✿</span>Alergie</button>
+      <button class="side-link" data-page="child"><span class="ico">♧</span>Ubiór dziecka</button>
       <button class="side-link" data-page="map"><span class="ico">⌖</span>Mapa</button>
     </nav>
     <div class="side-bottom">
@@ -292,6 +346,7 @@
       </div>
 
       <section id="allergyPanel" class="allergy-panel hidden" aria-live="polite"></section>
+      <section id="childPanel" class="child-panel hidden" aria-label="Dobór ubioru dziecka na pogodę"></section>
       <div id="allergyModal" class="allergy-modal hidden" role="dialog" aria-modal="true" aria-labelledby="allergyModalTitle">
         <div class="allergy-modal-card">
           <button type="button" class="allergy-close" id="allergyModalClose" data-close-allergy aria-label="Zamknij">✕</button>
@@ -313,7 +368,7 @@
       </div>
       <div class="credits">Prognoza modelowa, nie pomiar lokalny. Podczas lotów dronem sprawdź także aktualne ograniczenia przestrzeni powietrznej. Dane: <a href="https://open-meteo.com/" target="_blank" rel="noopener">Open-Meteo</a> (CC BY 4.0). Mapa: <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a>.</div>
     </main>
-    <nav class="mobile-nav" aria-label="Nawigacja mobilna"><button class="active" data-page="overview"><span>▥</span>Meteogram</button><button data-page="wind"><span>≋</span>Wiatr</button><button data-page="rain"><span>♧</span>Opady</button><button data-page="cloud"><span>☁</span>Chmury</button><button data-page="allergy"><span>✿</span>Alergie</button><button data-page="map"><span>⌖</span>Mapa</button></nav>
+    <nav class="mobile-nav" aria-label="Nawigacja mobilna"><button class="active" data-page="overview"><span>▥</span>Meteogram</button><button data-page="wind"><span>≋</span>Wiatr</button><button data-page="rain"><span>♧</span>Opady</button><button data-page="cloud"><span>☁</span>Chmury</button><button data-page="allergy"><span>✿</span>Alergie</button><button data-page="child"><span>♧</span>Dziecko</button><button data-page="map"><span>⌖</span>Mapa</button></nav>
   </div>
 </div>
 <script>/* AeroPogoda — Vanilla JS, bez frameworków i trackerów. Dane: Open-Meteo. */
@@ -328,12 +383,12 @@ const DEFAULT_PLACE={name:'Rzęskowo',lat:53.92,lon:15.17};
 function normalizePlace(p){if(!p||typeof p.name!=='string'||!p.name.trim())return null;const lat=Number(p.lat),lon=Number(p.lon);if(!Number.isFinite(lat)||!Number.isFinite(lon)||Math.abs(lat)>90||Math.abs(lon)>180)return null;return {name:p.name.trim().slice(0,90),lat,lon,...(typeof p.region==='string'&&p.region.trim()?{region:p.region.trim().slice(0,100)}:{})}}
 function placeKey(p){return `${Number(p.lat).toFixed(3)},${Number(p.lon).toFixed(3)}`}
 function normalizeList(list,maxCount){if(!Array.isArray(list))return[];const seen=new Set(),out=[];for(const x of list){const p=normalizePlace(x);if(!p)continue;const key=placeKey(p);if(seen.has(key))continue;seen.add(key);out.push(p);if(out.length>=maxCount)break}return out}
-const state={location:normalizePlace(saved('aero-v2-location',DEFAULT_PLACE))||DEFAULT_PLACE,page:'overview',range:24,step:15,unit:saved('aero-v2-unit','kmh'),compact:saved('aero-v5-compact',true)!==false,shortStep:15,data:null,rows:[],selected:0,updated:null,source:'live',isLoading:false,timezone:'Europe/Warsaw',favorites:normalizeList(saved('aero-v7-favorites',[]),12),recent:normalizeList(saved('aero-v7-recent',[]),8),searchPlaces:[],searchStatus:'Wpisz co najmniej 2 znaki, aby wyszukać miejscowość.',allergyRange:saved('aero-v9-allergy-range','day'),allergyMonth:saved('aero-v9-allergy-month',new Date().getMonth())};
+const state={location:normalizePlace(saved('aero-v2-location',DEFAULT_PLACE))||DEFAULT_PLACE,page:'overview',range:24,step:15,unit:saved('aero-v2-unit','kmh'),compact:saved('aero-v5-compact',true)!==false,shortStep:15,data:null,rows:[],selected:0,updated:null,source:'live',isLoading:false,timezone:'Europe/Warsaw',favorites:normalizeList(saved('aero-v7-favorites',[]),12),recent:normalizeList(saved('aero-v7-recent',[]),8),searchPlaces:[],searchStatus:'Wpisz co najmniej 2 znaki, aby wyszukać miejscowość.',allergyRange:saved('aero-v9-allergy-range','day'),allergyMonth:saved('aero-v9-allergy-month',new Date().getMonth()),allergySelected:saved('aero-v10-allergy-selected','grass'),childAge:saved('aero-v10-child-age','6-12'),childMode:saved('aero-v10-child-mode','stroller'),childWhen:saved('aero-v10-child-when','now'),childProfiles:saved('aero-v11-child-profiles',{}),childDraftKey:null,childDraft:null,childDraftStatus:'suggested',childLastAdjustment:'',childCabin:saved('aero-v12-child-cabin','warm')};
 const colors={temperature:'#68adff',feel:'#fbbf82',wind:'#43d4db',gust:'#ffb377',rain:'#ae96ff',chance:'#f2c683',cloud:'#bdcce4',low:'#3984b4',mid:'#7e9bdb',high:'#a5b2d2',humidity:'#6adcae',pressure:'#e6bb80'};
 const hourlyFields=['temperature_2m','apparent_temperature','relative_humidity_2m','precipitation','precipitation_probability','rain','cloud_cover','cloud_cover_low','cloud_cover_mid','cloud_cover_high','wind_speed_10m','wind_direction_10m','wind_gusts_10m','pressure_msl','visibility','weather_code','is_day'];
 const minFields=['temperature_2m','apparent_temperature','relative_humidity_2m','precipitation','rain','wind_speed_10m','wind_direction_10m','wind_gusts_10m','weather_code','is_day'];
 const currentFields=['temperature_2m','apparent_temperature','relative_humidity_2m','precipitation','rain','wind_speed_10m','wind_direction_10m','wind_gusts_10m','cloud_cover','weather_code','is_day'];
-const desc={overview:['Meteogram pogodowy','Temperatura, opady, zachmurzenie i wiatr w jednej osi czasu.','Meteogram • wszystkie parametry'],temperature:['Temperatura','Przebieg temperatury rzeczywistej i odczuwalnej w czasie.','Temperatura • prognoza szczegółowa'],wind:['Wiatr i porywy','Prędkość i porywy wiatru na 10 m oraz kierunek, z którego wieje.','Wiatr • prędkość, porywy i kierunek'],rain:['Opady i prawdopodobieństwo','Prognozowana suma opadu i prawdopodobieństwo jego wystąpienia.','Opady • natężenie i prawdopodobieństwo'],cloud:['Zachmurzenie','Pokrycie nieba chmurami oraz podział na piętra zachmurzenia.','Chmury • niskie, średnie i wysokie'],other:['Pozostałe parametry','Wilgotność względna powietrza i ciśnienie atmosferyczne.','Wilgotność i ciśnienie'],allergy:['Alergie i pylenie','Przegląd pylenia: dziś, tydzień, miesiąc i sezonowość w roku.','Alergie • pylenie i kalendarz sezonów'],map:['Mapa prognozy','Lokalizacja, dla której wyliczana jest prognoza.','Mapa • punkt prognozy']};
+const desc={overview:['Meteogram pogodowy','Temperatura, opady, zachmurzenie i wiatr w jednej osi czasu.','Meteogram • wszystkie parametry'],temperature:['Temperatura','Przebieg temperatury rzeczywistej i odczuwalnej w czasie.','Temperatura • prognoza szczegółowa'],wind:['Wiatr i porywy','Prędkość i porywy wiatru na 10 m oraz kierunek, z którego wieje.','Wiatr • prędkość, porywy i kierunek'],rain:['Opady i prawdopodobieństwo','Prognozowana suma opadu i prawdopodobieństwo jego wystąpienia.','Opady • natężenie i prawdopodobieństwo'],cloud:['Zachmurzenie','Pokrycie nieba chmurami oraz podział na piętra zachmurzenia.','Chmury • niskie, średnie i wysokie'],other:['Pozostałe parametry','Wilgotność względna powietrza i ciśnienie atmosferyczne.','Wilgotność i ciśnienie'],allergy:['Alergie i pylenie','Przegląd pylenia: dziś, tydzień, miesiąc i sezonowość w roku.','Alergie • pylenie i kalendarz sezonów'],child:['Jak ubrać dziecko?','Ubiór dopasowany do wieku, pogody i sposobu podróży.','Ubiór dziecka • rekomendacje'],map:['Mapa prognozy','Lokalizacja, dla której wyliczana jest prognoza.','Mapa • punkt prognozy']};
 const wdirs=['N','NNE','NE','ENE','E','ESE','SE','SSE','S','SSW','SW','WSW','W','WNW','NW','NNW'];
 function num(v,d=0){return v==null||!Number.isFinite(Number(v))?'—':Number(v).toFixed(d).replace('.',',')}
 function sval(v){return v==null?'—':num(state.unit==='ms'?v/3.6:v,state.unit==='ms'?1:0)}
@@ -515,7 +570,7 @@ function updateVisibleReading(){
     button.classList.toggle('active',active);button.setAttribute('aria-pressed',String(active));
   }
 }
-function renderChart(){const rows=state.rows;const cont=$('chartScroll');const allergyPage=state.page==='allergy';$('allergyPanel').classList.toggle('hidden',!allergyPage);$('chartPanel').classList.toggle('hidden-section',allergyPage);$('detailExplanation').classList.toggle('hidden-section',allergyPage);$('selectionPanel').classList.toggle('hidden-section',allergyPage);$('detailsRow').classList.toggle('hidden-section',allergyPage);if(allergyPage){renderAllergyPanel();return}if(state.page==='map'){renderDayNavigator([]);$('trackRail').classList.add('hidden');$('axisRail').classList.add('hidden');$('chartReadout').classList.add('hidden');$('detailExplanation').classList.add('hidden');cont.innerHTML=`<div class="map-box"><iframe id="osmMap" title="Mapa prognozy" loading="lazy" referrerpolicy="no-referrer"></iframe><div class="map-note">Mapa orientacyjna. Nie przedstawia stref lotniczych, ograniczeń ani zezwoleń.</div><a id="osmLink" href="#" target="_blank" rel="noopener">Otwórz mapę w OpenStreetMap</a></div>`;$('trackRail').innerHTML='';$('chartLegend').innerHTML='';$('chartSub').textContent='Punkt lokalizacji';$('resolutionLabel').textContent='Mapa: OpenStreetMap';let lat=state.location.lat,lon=state.location.lon;const bbox=[lon-.06,lat-.035,lon+.06,lat+.035].join('%2C');$('osmMap').src=`https://www.openstreetmap.org/export/embed.html?bbox=${bbox}&layer=mapnik&marker=${lat}%2C${lon}`;$('osmLink').href=`https://www.openstreetmap.org/?mlat=${lat}&mlon=${lon}#map=12/${lat}/${lon}`;return}
+function renderChart(){const rows=state.rows;const cont=$('chartScroll');const childPage=state.page==='child';$('childPanel').classList.toggle('hidden',!childPage);const allergyPage=state.page==='allergy';$('heroCards').classList.toggle('hidden-section',childPage||allergyPage);$('allergyPanel').classList.toggle('hidden',!allergyPage);$('chartPanel').classList.toggle('hidden-section',allergyPage||childPage);$('detailExplanation').classList.toggle('hidden-section',allergyPage||childPage);$('selectionPanel').classList.toggle('hidden-section',allergyPage||childPage);$('detailsRow').classList.toggle('hidden-section',allergyPage||childPage);if(childPage){renderChildPanel();return}if(allergyPage){renderAllergyPanel();return}if(state.page==='map'){renderDayNavigator([]);$('trackRail').classList.add('hidden');$('axisRail').classList.add('hidden');$('chartReadout').classList.add('hidden');$('detailExplanation').classList.add('hidden');cont.innerHTML=`<div class="map-box"><iframe id="osmMap" title="Mapa prognozy" loading="lazy" referrerpolicy="no-referrer"></iframe><div class="map-note">Mapa orientacyjna. Nie przedstawia stref lotniczych, ograniczeń ani zezwoleń.</div><a id="osmLink" href="#" target="_blank" rel="noopener">Otwórz mapę w OpenStreetMap</a></div>`;$('trackRail').innerHTML='';$('chartLegend').innerHTML='';$('chartSub').textContent='Punkt lokalizacji';$('resolutionLabel').textContent='Mapa: OpenStreetMap';let lat=state.location.lat,lon=state.location.lon;const bbox=[lon-.06,lat-.035,lon+.06,lat+.035].join('%2C');$('osmMap').src=`https://www.openstreetmap.org/export/embed.html?bbox=${bbox}&layer=mapnik&marker=${lat}%2C${lon}`;$('osmLink').href=`https://www.openstreetmap.org/?mlat=${lat}&mlon=${lon}#map=12/${lat}/${lon}`;return}
   if(!rows.length){renderDayNavigator([]);$('detailExplanation').classList.add('hidden');cont.innerHTML='<div class="empty-chart">Trwa pobieranie danych pogodowych...</div>';return}
   renderDayNavigator(rows);$('trackRail').classList.remove('hidden');$('axisRail').classList.remove('hidden');$('chartReadout').classList.remove('hidden');if(!$('meteogram'))cont.innerHTML='<svg id="meteogram" role="img" aria-label="Wykres pogody"></svg>';
   const help={overview:'Na osi 15-minutowej temperatura, opad i wiatr mają wartości co 15 minut. Zachmurzenie, ciśnienie i prawdopodobieństwo opadu pochodzą z prognozy godzinowej. Dostępność natywnych danych 15-minutowych zależy od regionu i modelu.',temperature:'Linia niebieska przedstawia temperaturę powietrza 2 m nad gruntem, a przerywana — temperaturę odczuwalną. Odczyt punktu pojawia się pod wykresem.',wind:'Linia turkusowa oznacza średnią prędkość wiatru na 10 m, pomarańczowa porywy na 10 m. Strzałki pokazują, dokąd wieje; kierunek liczbowy oznacza, skąd wieje.',rain:'Słupki pokazują prognozowaną sumę opadu w wybranym kroku czasowym (15 min, 30 min lub 1 godz.). Pomarańczowa linia to godzinowe prawdopodobieństwo opadu — nie jest to intensywność deszczu.',cloud:'Łączne zachmurzenie i pokrycie na poszczególnych piętrach chmur pochodzi z prognozy godzinowej. Pokrycia pięter nakładają się na siebie i nie sumują do całkowitego zachmurzenia.',other:'Wilgotność jest przedstawiona w %, a ciśnienie w hPa. Obie serie pochodzą z prognozy godzinowej.'};$('detailText').textContent=help[state.page]||'';$('detailExplanation').classList.remove('hidden');const defs=tracks();let rail=`<div class="rail-time" style="height:${state.compact?31:48}px">CZAS</div>`;defs.forEach(t=>{const mobile=window.matchMedia('(max-width:550px)').matches;const nick={temp:'Temp.',rain:'Opady',cloud:'Chmury',wind:'Wiatr',other:'Inne',direction:'Kier.'};rail+=`<div class="rail-block" style="height:${t.height}px"><span class="rail-icon">${t.icon}</span><strong>${mobile?(nick[t.key]||t.name):t.name}</strong><small>${t.hint}</small></div>`});$('trackRail').innerHTML=rail;renderFixedAxes(rows,defs);
@@ -526,7 +581,7 @@ function renderChart(){const rows=state.rows;const cont=$('chartScroll');const a
   // Używamy kliknięcia, nie przechwytujemy gestów przewijania dotykowego.
   svg.onclick=ev=>{const rect=svg.getBoundingClientRect();const idx=clamp(Math.floor((ev.clientX-rect.left)/graph.px),0,rows.length-1);state.selected=idx;renderChart();renderSelection()};renderReadout();
 }
-function renderSelection(){if(state.page==='allergy')return;const r=state.rows[state.selected];if(!r){$('selectTime').textContent='—';$('selectWeather').textContent='Brak prognozy';$('selectionValues').innerHTML='—';return}$('selectTime').textContent=`${fmtDay(r.time)}, ${fmtHour(r.time)}`;$('timelineTime').textContent=`${fmtDay(r.time)} • ${fmtHour(r.time)}`;$('selectWeather').textContent=weatherText(r.code);const stats=state.page==='wind'?[['Wiatr 10 m',windCard(r.wind)],['Porywy',windCard(r.gust)],['Kierunek',compass(r.direction)]]:state.page==='rain'?[['Opady',`${num(r.rain,2)} mm`],['Szansa opadu',`${num(r.chance)}%`],['Chmury',`${num(r.cloud)}%`]]:state.page==='cloud'?[['Łącznie',`${num(r.cloud)}%`],['Niskie',`${num(r.low)}%`],['Średnie',`${num(r.mid)}%`],['Wysokie',`${num(r.high)}%`]]:state.page==='other'?[['Wilgotność',`${num(r.humidity)}%`],['Ciśnienie',`${num(r.pressure)} hPa`],['Widzialność',`${num(r.visibility!=null?r.visibility/1000:null,1)} km`]]:[['Temperatura',`${num(r.temp,1)}°C`],['Odczuwalna',`${num(r.feels,1)}°C`],['Opad',`${num(r.rain,2)} mm`],['Chmury',`${num(r.cloud)}%`],['Wiatr',windCard(r.wind)],['Porywy',windCard(r.gust)]];$('selectionValues').innerHTML=stats.map(([label,val])=>`<div class="sel-stat"><span>${esc(label)}</span><b>${esc(val)}</b></div>`).join('');renderReadout()}
+function renderSelection(){if(state.page==='allergy'||state.page==='child')return;const r=state.rows[state.selected];if(!r){$('selectTime').textContent='—';$('selectWeather').textContent='Brak prognozy';$('selectionValues').innerHTML='—';return}$('selectTime').textContent=`${fmtDay(r.time)}, ${fmtHour(r.time)}`;$('timelineTime').textContent=`${fmtDay(r.time)} • ${fmtHour(r.time)}`;$('selectWeather').textContent=weatherText(r.code);const stats=state.page==='wind'?[['Wiatr 10 m',windCard(r.wind)],['Porywy',windCard(r.gust)],['Kierunek',compass(r.direction)]]:state.page==='rain'?[['Opady',`${num(r.rain,2)} mm`],['Szansa opadu',`${num(r.chance)}%`],['Chmury',`${num(r.cloud)}%`]]:state.page==='cloud'?[['Łącznie',`${num(r.cloud)}%`],['Niskie',`${num(r.low)}%`],['Średnie',`${num(r.mid)}%`],['Wysokie',`${num(r.high)}%`]]:state.page==='other'?[['Wilgotność',`${num(r.humidity)}%`],['Ciśnienie',`${num(r.pressure)} hPa`],['Widzialność',`${num(r.visibility!=null?r.visibility/1000:null,1)} km`]]:[['Temperatura',`${num(r.temp,1)}°C`],['Odczuwalna',`${num(r.feels,1)}°C`],['Opad',`${num(r.rain,2)} mm`],['Chmury',`${num(r.cloud)}%`],['Wiatr',windCard(r.wind)],['Porywy',windCard(r.gust)]];$('selectionValues').innerHTML=stats.map(([label,val])=>`<div class="sel-stat"><span>${esc(label)}</span><b>${esc(val)}</b></div>`).join('');renderReadout()}
 function renderNextDays(){const data=state.data?.daily;if(!data)return;const now=Math.floor(Date.now()/1000),h=state.data.hourly;let html='';const time=h.time??[];let nearest=Math.max(0,time.findIndex(t=>t>=now));if(nearest===0&&time[0]<now)nearest=0;for(let i=0;i<5;i++){const idx=nearest+i*3;if(idx>=time.length)break;const t=time[idx];const code=getAt(h,'weather_code',idx),temp=getAt(h,'temperature_2m',idx);html+=`<div class="day-card"><strong>${esc(fmtHour(t))}</strong><span class="weather-icon">${weatherEmoji(code)}</span><span>${num(temp)}°C</span></div>`}$('dailyCards').innerHTML=html||'<span>Brak danych godzinowych</span>'}
 function renderInsight(){const c=atNow();let sun=state.data?.daily;let text=[];let sr=sun?.sunrise?.[0],ss=sun?.sunset?.[0];if(sr&&ss)text.push(['Wschód / zachód',`${fmtHour(sr)} / ${fmtHour(ss)}`]);text.push(['Temperatura odczuwalna',`${num(c.apparent_temperature,1)}°C`]);text.push(['Wilgotność względna',`${num(c.relative_humidity_2m)}%`]);text.push(['Kierunek wiatru',compass(c.wind_direction_10m)]);$('insightList').innerHTML=text.map(([l,v])=>`<div class="insight-item"><span>${esc(l)}</span><b>${esc(v)}</b></div>`).join('')}
 // Lokalizacje są przechowywane tylko w localStorage bieżącej domeny.
@@ -577,11 +632,278 @@ function closeAllergyModal(){const modal=$('allergyModal');if(modal.classList.co
 function renderAllergyBars(items){return `<div class="allergy-bars">${items.map(it=>`<div class="allergy-bar"><div class="allergy-bar-value">${num(it.value,1)}</div><div class="allergy-bar-fill ${severityClass(it.value)}" style="height:${Math.max(6,it.value/4*118)}px"></div><div class="allergy-bar-label">${esc(it.label)}</div></div>`).join('')}</div>`}
 function renderAllergyLine(items){const w=420,h=130,p=16; const xs=items.map((_,i)=> p + i*((w-p*2)/(Math.max(1,items.length-1)))); const ys=items.map(it=> h-p-(it.value/4)*(h-p*2)); const d=xs.map((x,i)=>(i?'L':'M')+x.toFixed(1)+' '+ys[i].toFixed(1)).join(' '); const area='M '+p+' '+(h-p)+' '+xs.map((x,i)=>'L '+x.toFixed(1)+' '+ys[i].toFixed(1)).join(' ')+' L '+(w-p)+' '+(h-p)+' Z'; return `<div class="allergy-linechart"><div class="allergy-axis-y"><span>4</span><span>2</span><span>0</span></div><svg viewBox="0 0 ${w} ${h}" preserveAspectRatio="none"><rect width="${w}" height="${h}" fill="none"/><g stroke="#38506a" stroke-dasharray="3 5">${[0,1,2].map(i=>{const y=p+i*((h-p*2)/2); return `<line x1="${p}" y1="${y}" x2="${w-p}" y2="${y}"/>`}).join('')}</g><path d="${area}" fill="#5eb8ff22"/><path d="${d}" fill="none" stroke="#70c0ff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>${xs.map((x,i)=>`<circle cx="${x}" cy="${ys[i]}" r="2.6" fill="#dff2ff"/>`).join('')}</svg></div>`}
 function renderMonthHeatmap(){const head=monthShort.map(m=>`<div class="month-heatmap-header">${m}</div>`).join(''); const rows=allergyKeys().map(k=>{const cfg=allergyInfo[k]; return `<div class="month-name">${esc(cfg.name)}</div>${cfg.months.map(v=>`<div class="month-cell lv${Math.max(0,Math.min(4,Math.round(v)))}" title="${esc(cfg.name)} • ${severityName(v)}"></div>`).join('')}`}).join(''); return `<div class="month-heatmap">${'<div></div>'+head}${rows}</div>` }
-function renderAllergyPanel(){const panel=$('allergyPanel'); const today=new Date(); const top=topAllergens(today,6); const primaryKey=(top.find(x=>x.value>0)||top[0]||{key:'grass'}).key; const selected=primaryKey; let chartHtml='', chartMeta=''; if(state.allergyRange==='day'){const data=top.map(x=>({label:x.cfg.name,value:x.value})); chartHtml=renderAllergyBars(data); chartMeta='Dzisiejszy przegląd najważniejszych alergenów w tej lokalizacji.'} else if(state.allergyRange==='week'){const data=allergyWeekSeries(selected,today); chartHtml=renderAllergyBars(data); chartMeta=`Tygodniowy przebieg dla: ${allergyInfo[selected].name}.`} else if(state.allergyRange==='month'){const data=allergyMonthSeries(selected,today); chartHtml=renderAllergyLine(data)+`<div class="allergy-axis">${['1','7','14','21',String(data.length)].map(v=>`<span>${v}</span>`).join('')}</div>`; chartMeta=`Miesięczny przebieg dla: ${allergyInfo[selected].name}.`} else {chartHtml=renderMonthHeatmap(); chartMeta='Kalendarz sezonowości pylenia w ciągu roku.'}
- const rows=top.map(item=>`<div class="allergen-row"><div class="allergen-name"><div><div>${esc(item.cfg.name)}</div><small>${esc(item.cfg.type)} • ${esc(item.cfg.latin)}</small></div></div><div class="allergen-track"><div class="allergen-fill ${severityClass(item.value)}" style="width:${Math.max(4,item.value/4*100)}%"></div></div><div class="risk-chip">${esc(severityName(item.value))}</div><button type="button" class="allergen-help" data-allergy-help="${item.key}" aria-label="Informacje o alergenie ${esc(item.cfg.name)}">?</button></div>`).join('');
- panel.innerHTML=`<div class="allergy-topbar"><div><h3>Alergie i pylenie</h3><p>Nowa sekcja pomaga sprawdzić, co może uczulać dziś, w najbliższym tygodniu oraz w skali sezonu. Widok miesięczny pokazuje sezonowość pylenia.</p></div><div class="allergy-badge">✿ Najsilniej dziś: <strong>${esc((top[0]||{cfg:{name:'Brak'}}).cfg.name)}</strong></div></div><div class="allergy-grid"><div class="allergy-card"><h4>Wykres pylenia</h4><div class="allergy-tabs" id="allergyTabs"><button type="button" data-allergy-range="day" class="${state.allergyRange==='day'?'active':''}">Dzień</button><button type="button" data-allergy-range="week" class="${state.allergyRange==='week'?'active':''}">Tydzień</button><button type="button" data-allergy-range="month" class="${state.allergyRange==='month'?'active':''}">Miesiąc</button><button type="button" data-allergy-range="months" class="${state.allergyRange==='months'?'active':''}">Miesiące</button></div><div class="allergy-chart">${chartHtml}</div><div class="allergy-note">${esc(chartMeta)} Źródło logiki: kalendarz sezonowości pylenia w aplikacji. Można go później podłączyć pod Google Pollen API dla prognozy krótkoterminowej.</div></div><div class="allergy-card"><h4>Najważniejsze alergeny</h4><div class="allergy-toplist">${rows}</div><div class="allergy-note" style="margin-top:10px">Kliknij <strong>?</strong>, aby zobaczyć opis alergenu, miejsca występowania i sposoby ograniczania ekspozycji.</div></div></div><div class="allergy-card"><h4>Przegląd miesięcy i wskazówki</h4><div class="allergy-insights"><div><strong style="display:block;margin-bottom:8px">Kalendarz sezonowy</strong>${renderMonthHeatmap()}</div><div><strong style="display:block;margin-bottom:8px">Jak czytać poziomy?</strong><div class="allergy-note">Skala jest uproszczona: 0–4. Niskie oznacza mało prawdopodobne nasilenie objawów, a bardzo wysokie — okres, gdy warto ograniczać czas na zewnątrz, częściej wietrzyć po deszczu i myć włosy po powrocie do domu.</div></div><div><strong style="display:block;margin-bottom:8px">Dalszy rozwój</strong><div class="allergy-note">Jeżeli chcesz, w kolejnym kroku podłączę tę sekcję do Google Pollen API. Wtedy „dzień” i „tydzień” będą pobierane z prognozy, a widok miesięcy zostanie jako kalendarz sezonowości.</div></div></div></div>`;
-  panel.querySelectorAll('[data-allergy-range]').forEach(btn=>btn.addEventListener('click',()=>{state.allergyRange=btn.dataset.allergyRange;store('aero-v9-allergy-range',state.allergyRange);renderAllergyPanel()}));
-  panel.querySelectorAll('[data-allergy-help]').forEach(btn=>btn.addEventListener('click',()=>openAllergyModal(btn.dataset.allergyHelp)));
+function renderAllergyPanel(){
+ const panel=$('allergyPanel'),today=new Date(),top=topAllergens(today,7);
+ if(!allergyInfo[state.allergySelected])state.allergySelected='grass';
+ const selected=state.allergySelected, chosen=allergyInfo[selected], month=Number(state.allergyMonth)||0;
+ let chartHtml='',chartMeta='';
+ if(state.allergyRange==='day'){
+   const d=top.map(x=>({label:x.cfg.name,value:x.value}));chartHtml=renderAllergyBars(d); chartMeta='Orientacyjny poziom pylenia według kalendarza sezonowego na dzisiaj.';
+ }else if(state.allergyRange==='week'){
+   const d=allergyWeekSeries(selected,today);chartHtml=renderAllergyBars(d);chartMeta=`Orientacyjny przebieg tygodniowy: ${chosen.name}. Wybierz inny alergen powyżej.`;
+ }else if(state.allergyRange==='month'){
+   const d=allergyMonthSeries(selected,new Date(today.getFullYear(),month,1));chartHtml=renderAllergyLine(d)+`<div class="allergy-axis">${['1','7','14','21',String(d.length)].map(v=>`<span>${v}</span>`).join('')}</div>`;
+   chartMeta=`Sezonowość w miesiącu ${monthShort[month]}: ${chosen.name}. Nie jest to prognoza na 30 dni.`;
+ }else{chartHtml=renderMonthHeatmap();chartMeta='Przekrojowy kalendarz orientacyjnych sezonów pylenia w Polsce.'}
+ const selector=state.allergyRange==='week'||state.allergyRange==='month'?`<div class="allergy-picker"><label for="allergyPlantSelect">Wybierz alergen</label><select id="allergyPlantSelect" class="allergy-select" aria-label="Roślina do wykresu">${allergyKeys().map(k=>`<option value="${k}" ${k===selected?'selected':''}>${esc(allergyInfo[k].name)}</option>`).join('')}</select>${state.allergyRange==='month'?`<label for="allergyMonthSelect">Miesiąc</label><select id="allergyMonthSelect" class="allergy-select" aria-label="Wybierz miesiąc">${monthShort.map((m,i)=>`<option value="${i}" ${i===month?'selected':''}>${m}</option>`).join('')}</select>`:''}</div>`:'';
+ const rows=top.map(item=>`<div class="allergen-row ${item.key===selected?'is-selected':''}"><div class="allergen-name"><button type="button" class="allergen-pick" data-select-allergen="${item.key}" title="Pokaż wykres: ${esc(item.cfg.name)}">${esc(item.cfg.name)}<small>${esc(item.cfg.type)} • ${esc(item.cfg.latin)}</small></button></div><div class="allergen-track"><div class="allergen-fill ${severityClass(item.value)}" style="width:${Math.max(4,item.value/4*100)}%"></div></div><div class="risk-chip">${esc(severityName(item.value))}</div><button type="button" class="allergen-help" data-allergy-help="${item.key}" aria-label="Informacje o alergenie ${esc(item.cfg.name)}">?</button></div>`).join('');
+ panel.innerHTML=`<div class="allergy-topbar"><div><h3>Alergie i pylenie</h3><p>Kalendarz sezonowego pylenia. Wybierz dowolny alergen oraz widok dnia, tygodnia lub miesiąca.</p></div><div class="allergy-badge">✿ Sezon: <strong>${esc((top[0]||{cfg:{name:'Brak'}}).cfg.name)}</strong></div></div><div class="allergy-grid"><div class="allergy-card"><h4>Wykres pylenia</h4><div class="allergy-tabs" id="allergyTabs"><button type="button" data-allergy-range="day" class="${state.allergyRange==='day'?'active':''}">Dzień</button><button type="button" data-allergy-range="week" class="${state.allergyRange==='week'?'active':''}">Tydzień</button><button type="button" data-allergy-range="month" class="${state.allergyRange==='month'?'active':''}">Miesiąc</button><button type="button" data-allergy-range="months" class="${state.allergyRange==='months'?'active':''}">Miesiące</button></div>${selector}<div class="allergy-chart">${chartHtml}</div><div class="allergy-note">${esc(chartMeta)} <b>Uwaga:</b> wartości 0–4 są orientacyjną sezonowością, a nie pomiarem pyłków ani prognozą miejscową.</div></div><div class="allergy-card"><h4>Wybierz roślinę lub przeczytaj opis</h4><div class="allergy-toplist">${rows}</div><div class="allergy-note" style="margin-top:10px">Dotknij nazwy, aby wybrać wykres. Znak <b>?</b> otwiera opis występowania i unikania alergenu.</div></div></div><div class="allergy-card"><h4>Kalendarz sezonowy (Polska)</h4>${renderMonthHeatmap()}<div class="allergy-note" style="margin-top:10px">Terminy kwitnienia i stężenia różnią się między regionami i latami; na ten moment moduł nie pobiera danych o aktualnym pyleniu. Do rzeczywistych 5-dniowych prognoz można później podłączyć Google Pollen API.</div></div>`;
+ panel.querySelectorAll('[data-allergy-range]').forEach(b=>b.addEventListener('click',()=>{state.allergyRange=b.dataset.allergyRange;store('aero-v9-allergy-range',state.allergyRange);renderAllergyPanel()}));
+ panel.querySelectorAll('[data-allergy-help]').forEach(b=>b.addEventListener('click',()=>openAllergyModal(b.dataset.allergyHelp)));
+ panel.querySelectorAll('[data-select-allergen]').forEach(b=>b.addEventListener('click',()=>{state.allergySelected=b.dataset.selectAllergen;store('aero-v10-allergy-selected',state.allergySelected);if(state.allergyRange==='day'||state.allergyRange==='months'){state.allergyRange='week';store('aero-v9-allergy-range',state.allergyRange)}renderAllergyPanel()}));
+ $('allergyPlantSelect')?.addEventListener('change',e=>{state.allergySelected=e.target.value;store('aero-v10-allergy-selected',state.allergySelected);renderAllergyPanel()});
+ $('allergyMonthSelect')?.addEventListener('change',e=>{state.allergyMonth=Number(e.target.value);store('aero-v9-allergy-month',state.allergyMonth);renderAllergyPanel()});
+}
+
+const childAges=[['0-6','0–6 miesięcy'],['6-12','6–12 miesięcy'],['1-3','1–3 lata'],['4-7','4–7 lat'],['8+','8 lat i więcej']];
+const childModes=[['walk','Spacer / plac zabaw'],['stroller','Wózek / gondola'],['car','Samochód / fotelik']];
+const childWhens=[['now','Teraz'],['3h','Za 3 godziny'],['tomorrow','Jutro rano']];
+const childOpt=(choices,sel)=>choices.map(([k,l])=>`<option value="${esc(k)}" ${k===sel?'selected':''}>${esc(l)}</option>`).join('');
+function childForecast(){
+ const d=state.data;if(!d)return null;
+ const now=Math.floor(Date.now()/1000), h=d.hourly, htime=h?.time||[];
+ if(state.childWhen==='now'){
+   const c=d.current||{};
+   return {hour:'Teraz',temp:c.temperature_2m,feels:c.apparent_temperature??c.temperature_2m,wind:c.wind_speed_10m,rain:c.precipitation,code:c.weather_code,source:state.source};
+ }
+ if(!htime.length)return null;
+ let target=now+3*3600;
+ if(state.childWhen==='tomorrow'){
+   const day=new Date();day.setDate(day.getDate()+1);day.setHours(9,0,0,0);target=Math.floor(day.getTime()/1000);
+ }
+ let idx=htime.findIndex(t=>t>=target); if(idx<0)idx=htime.length-1;
+ const f=(k)=>getAt(h,k,idx);
+ return {hour:fmtDay(htime[idx])+', '+fmtHour(htime[idx]),temp:f('temperature_2m'),feels:f('apparent_temperature')??f('temperature_2m'),wind:f('wind_speed_10m'),rain:f('precipitation'),code:f('weather_code'),source:state.source};
+}
+function childClothes(age,mode,f){
+ const baby=['0-6','6-12'].includes(age),youngest=age==='0-6',isCar=mode==='car',isStroller=mode==='stroller';
+ const feels=Number.isFinite(f?.feels)?f.feels:(Number.isFinite(f?.temp)?f.temp:null);
+ if(feels===null)return null;
+ const raining=Number(f?.rain)>0.15||[51,53,55,61,63,65,80,81,82].includes(Number(f?.code));
+ const windy=Number(f?.wind)>22,hot=feels>=26,cold=feels<8,freezing=feels<0;
+ let title='',lead='',outfit=[];
+ const add=(ico,name,explain)=>outfit.push({ico,name,explain});
+ if(isCar){
+   title='Ubiór do fotelika — przede wszystkim bezpieczne pasy';
+   lead='Temperatura w samochodzie może być inna niż na zewnątrz. Wybierz cienkie warstwy odpowiednie do ogrzewanej kabiny i zmieniaj je po wejściu do auta.';
+   if(hot){add('👕','Cienka bawełniana warstwa',baby?'Lekkie body lub pajacyk, bez przegrzewania.':'Koszulka i lekkie spodnie lub przewiewny zestaw.');}
+   else{add('👕','Cienka warstwa przy skórze',baby?'Body i cienki pajacyk.':'Koszulka i spodnie.');add('🧶',cold?'Cienki polar do fotelika':'Opcjonalnie cienka bluza',cold?'Bez grubego wypełnienia pod pasami.':'Zdejmij, kiedy w aucie zrobi się ciepło.');}
+   add('🔒','Dobrze dopasowana uprząż','Najpierw zapnij i dociągnij pasy zgodnie z instrukcją fotelika. Grube kurtki i kombinezony zdejmij przed zapięciem.');
+   if(cold)add('🧺','Koc dopiero na pasy','Jeżeli trzeba, połóż lekki koc na zapięte pasy, nie pod dzieckiem ani pod uprzężą; odsłoń twarz.');
+ }else{
+   if(freezing){title='Bardzo chłodno — krótszy pobyt i ciepłe warstwy';lead='Przy mrozie regularnie sprawdzaj komfort dziecka, osłaniaj je przed wiatrem i skróć ekspozycję, szczególnie u małych niemowląt.';
+      add('🧦','Warstwa podstawowa',baby?'Body z długim rękawem i spodnie/pajacyk.':'Bielizna lub cienka warstwa z długim rękawem.');
+      add('🧶','Warstwa izolacyjna',baby?'Ciepły sweter lub polar.':'Polar lub ciepła bluza i spodnie.');
+      add('🧥','Ochrona przed zimnem',isStroller?'Ciepły kombinezon lub odpowiedni śpiworek do wózka, bez przykrywania twarzy.':'Kurtka zimowa, ciepłe spodnie, czapka i rękawiczki.');
+   }else if(feels<8){title='Chłodno — ubierz na cebulkę';lead='Kilka łatwo zdejmowanych warstw zapewni większą elastyczność, zwłaszcza gdy nasili się wiatr.';
+     add('👕','Warstwa bazowa',baby?'Body z długim rękawem i długie spodnie/pajacyk.':'Bluzka z długim rękawem i długie spodnie.');
+     add('🧶','Bluza lub polar','Ciepły, ale oddychający materiał.');
+     add('🧥','Kurtka przejściowa i czapka',isStroller?'Lekki śpiworek/koc odpowiedni do temperatury, nie zakrywający twarzy.':'Kurtka osłaniająca przed wiatrem, czapka i pełne buty.');
+   }else if(feels<16){title='Rześko — lekka kurtka przyda się';lead='Najlepiej sprawdzą się cienkie warstwy, które możesz zdjąć, gdy zrobi się cieplej.';
+     add('👚','Długi rękaw',baby?'Body z długim rękawem i spodnie.':'Bluzka z długim rękawem i długie spodnie.');
+     add('🧥','Lekka bluza / kurtka','Wiatr może obniżać komfort; wybierz ubranie, które łatwo rozpiąć.');
+     if(isStroller)add('🧺','Lekki koc w zapasie','Na chłód, ale tylko poniżej ramion i z zachowaniem wentylacji.');
+   }else if(feels<23){title='Łagodna pogoda — lekki zestaw';lead='Zwykle wystarczają przewiewne warstwy; zapakuj lekką bluzę na zmianę pogody.';
+      add('👕','Bawełniana warstwa',baby?'Body i lekkie spodnie lub pajacyk.':'Koszulka i lekkie spodnie.');
+      add('🧶','Cienka bluza pod ręką','Zapas na chłodniejszy wiatr i postój w cieniu.');
+   }else{title='Ciepło — ogranicz warstwy';lead='Stawiaj na przewiewną odzież, cień i regularne sprawdzanie, czy dziecko nie jest przegrzane.';
+      add('👕','Jedna lekka warstwa',baby?'Cienkie bawełniane body lub przewiewny pajacyk.':'Lekka koszulka i krótkie lub cienkie długie spodnie.');
+      add('🧢','Kapelusz i ochrona przed słońcem','W cieniu i z ochroną przeciwsłoneczną dobraną do wieku.');
+   }
+   if(raining)add('☔','Ochrona przed opadami',isStroller?'Osłona przeciwdeszczowa zgodna z instrukcją wózka, z otworami wentylacyjnymi.':'Lekka kurtka przeciwdeszczowa lub parasol, suche ubranie na zmianę.');
+   if(windy&&!cold)add('🌬️','Osłona przed wiatrem','Zabierz lekką wiatroszczelną warstwę; unikaj nieszczelnych osłon wózka.');
+ }
+ const notices=[];
+ if(isCar){notices.push({heading:'Bezpieczeństwo w foteliku',text:'Nie zapinaj pasów na grubej kurtce, puchowym kombinezonie ani grubym wkładzie. Koc układaj dopiero NA zapiętej uprzęży, bez zasłaniania twarzy. Nie dokładaj niezatwierdzonych wkładek.'});notices.push({heading:'Ogrzane wnętrze auta',text:'Po rozgrzaniu kabiny zdejmij koc i dodatkowe warstwy. Nigdy nie zostawiaj dziecka samego w pojeździe.'});}
+ if(isStroller){notices.push({heading:'Wentylacja wózka',text:'Nigdy nie nakrywaj budki kocem ani pieluchą w celu zacienienia — to grozi przegrzaniem. Używaj przewiewnej budki lub parasolki i regularnie kontroluj dziecko.'});}
+ if(baby){notices.push({heading:'Kontrola komfortu niemowlęcia',text:'Sprawdzaj kark lub klatkę piersiową, nie same dłonie. Jeśli maluch jest spocony, ma gorący tułów lub jest wyraźnie niespokojny, zdejmij warstwę.'});if(youngest)notices.push({heading:'Dziecko poniżej 6 miesięcy',text:'Unikaj bezpośredniego słońca. Podczas upałów ogranicz pobyt na zewnątrz; małe niemowlęta łatwiej się przegrzewają.'});}
+ if(!isCar&&hot)notices.push({heading:'Upał',text:'Szukaj cienia, skróć intensywny spacer i zapewnij płyny odpowiednie do wieku. Nie używaj szczelnych osłon.'});
+ return {title,lead,outfit,notices,weather:{raining,windy,hot,cold}};
+}
+// Opcje ubioru są oparte na warunkach i wieku, a nie na sztywnej pojedynczej liście.
+function wardrobeConfig(age, mode, f){
+ const baby=['0-6','6-12'].includes(age), toddler=age==='1-3', car=mode==='car', stroller=mode==='stroller';
+ const feels=Number.isFinite(f?.feels)?f.feels:f?.temp;
+ const cool=Number.isFinite(feels)?feels:15;
+ const windy=(f?.wind??0)>=25, rainy=Number(f?.rain)>0.15||[51,53,55,61,63,65,80,81,82].includes(Number(f?.code));
+ const opt=(id,icon,name,detail,warmth=0)=>({id,icon,name,detail,warmth});
+ const base=baby?[
+  opt('body-short','👕','Cienkie body + spodnie','Krótki rękaw, cienka bawełna',.85),
+  opt('body-pants','👕','Body z długim rękawem + spodnie','Standardowa, wygodna baza',1.45),
+  opt('sleepsuit','🧸','Pajacyk bawełniany','Długi rękaw, cienka dzianina',1.5),
+  opt('body-half','🧦','Body + półśpiochy','Miękka, lekka alternatywa',1.25),
+  opt('sleepsuit-warm','🧸','Cieplejszy pajacyk','Grubsza dzianina, bez puchowego wypełnienia',2.05)
+ ]:[
+  opt('thin-shirt','👕','Cienka bluzeczka + spodnie','Lekki materiał — może wymagać cieplejszej bluzy',.85),
+  opt('long-pants','👕','Bluzka z długim rękawem + spodnie','Standardowa warstwa bazowa',1.45),
+  opt('tee-pants','🩳','T-shirt + spodnie','Lekki zestaw na cieplejszą pogodę',.85),
+  opt('dress-leggings','👗','Sukienka + legginsy','Przeważnie średnio ciepły zestaw',1.25),
+  opt('thermal','👕','Cieplejsza bluzka + spodnie','Grubsza dzianina na chłodniejsze dni',2.15)
+ ];
+ const middle=[
+  opt('none','➖','Bez bluzy','Tylko warstwa podstawowa',0),
+  opt('thin','🧥','Cienka bluza','Lekka, łatwa do zdjęcia',.65),
+  opt('fleece','🧶','Cieplejsza bluza / polar','Więcej ocieplenia niż cienka bluza',1.3)
+ ];
+ if(!car)middle.push(opt('thick','🧵','Gruba bluza / sweter','Gdy cienki strój wymaga dodatkowego ciepła',1.95));
+ const outer=car?[]:[
+  opt('none','➖','Bez kurtki','Brak warstwy zewnętrznej',0),
+  opt('wind','🌬️','Wiatrówka','Ochrona przed wiatrem, niewielkie ocieplenie',.3),
+  opt('rain','🌧️','Kurtka przeciwdeszczowa','Ochrona przed wilgocią, niewielkie ocieplenie',.35),
+  opt('winter','🧥','Kurtka zimowa','Mocne ocieplenie, tylko poza samochodem',2)
+ ];
+ const head=[opt('none','➖','Bez czapki','Ciepło lub ogrzany samochód'),opt('thin','🧢','Cienka czapka','Chłód i wiatr'),opt('warm','🧣','Ciepła czapka','Niskie temperatury'),opt('sun','👒','Kapelusz','Ochrona przed słońcem')];
+ const feet=baby?[
+  opt('none','🦶','Bez dodatkowych','Gdy jest ciepło lub pajacyk ma stópki'),
+  opt('socks','🧦','Skarpetki','Na chłodniejsze stopy'),
+  opt('booties','👶','Ciepłe skarpetki','Miękkie, bez ucisku')
+ ]:[
+  opt('shoes','👟','Zakryte buty','Na chłodniejsze dni'),
+  opt('light','🥿','Lekkie buty','Na łagodną pogodę'),
+  opt('rainboots','🥾','Kalosze','Na mokrą nawierzchnię'),
+  opt('sandals','🩴','Sandały','Na ciepłą pogodę')
+ ];
+ const extras=[opt('spare','🎒','Ubranie na zmianę','Zapas na zabrudzenia lub nagły chłód')];
+ if(cool<10)extras.push(opt('gloves','🧤','Rękawiczki','Gdy dłonie są wyziębione'));
+ if(stroller){
+   extras.push(opt('blanket','🧺','Lekki koc / śpiworek','Tylko odpowiedni do temperatury, twarz odsłonięta'));
+   extras.push(opt('shade','☂️','Parasolka / budka','Zacienienie z zachowaniem wentylacji'));
+   extras.push(opt('raincover','☔','Osłona deszczowa','Wentylowana, zgodna z instrukcją wózka'));
+ }
+ if(car)extras.push(opt('blanket','🧺','Koc NA pasy','Na poprawnie zapiętą uprząż — można zdjąć w ciepłym aucie'));
+ const groups=[
+  {key:'base',title:'1. Wybierz strój podstawowy',help:'Wybierz cienki, normalny lub cieplejszy strój. Następna warstwa dostosuje się automatycznie.',options:base},
+  {key:'middle',title:'2. Bluza / polar',help:'Po zmianie podstawy wyliczam propozycję bluzy. Możesz ją zmienić ręcznie.',options:middle}
+ ];
+ if(!car)groups.push({key:'outer',title:'3. Kurtka / osłona',help:'Zależnie od wiatru i opadów; warstwa nie zastępuje odpowiedniej bluzy.',options:outer});
+ groups.push({key:'head',title:car?'3. Czapka w aucie':'4. Nakrycie głowy',help:car?'Zdejmij czapkę w ogrzanym samochodzie.':'Dobierz do wiatru, chłodu i słońca.',options:head});
+ groups.push({key:'feet',title:car?'4. Stopy':'5. Stopy / obuwie',help:'Dostosuj do wieku i warunków.',options:feet});
+ groups.push({key:'extras',title:car?'5. Dodatki do podróży':'6. Dodatki i zapas',help:'Możesz zaznaczyć kilka lub żadnego.',options:extras,multiple:true});
+ const defaults={
+  base:baby?(cool>=24?'body-short':'body-pants'):(cool>=21?'tee-pants':'long-pants'),
+  middle:'none',
+  outer:'none',
+  head:car?'none':(cool<6?'warm':cool<16&&baby?'thin':cool>=24?'sun':'none'),
+  feet:baby?(cool>=26?'none':cool<5?'booties':'socks'):(cool>=25?'sandals':rainy?'rainboots':cool>=18?'light':'shoes'),
+  extras:[...(cool<5?['gloves']:[]),...(stroller&&cool<9?['blanket']:[]),...(stroller&&cool>=22?['shade']:[]),...(stroller&&rainy?['raincover']:[]),...(car&&cool<10?['blanket']:[]),...(rainy?['spare']:[])]
+ };
+ const validExtras=new Set(extras.map(o=>o.id));defaults.extras=[...new Set(defaults.extras)].filter(x=>validExtras.has(x));
+ const conf={groups,defaults,feels:cool,car,stroller,baby,windy,rainy,cabin:state.childCabin};
+ conf.defaults=wardrobeFindBalance(conf,conf.defaults,'base');
+ return conf;
+}
+
+// Orientacyjne porównanie ciepła warstw. To reguły UX, nie pomiar izolacyjności ani ocena medyczna.
+function wardrobeOpt(conf,key,id){return conf.groups.find(g=>g.key===key)?.options.find(o=>o.id===id)}
+function wardrobeTarget(conf){
+ // W foteliku liczymy ubranie względem temperatury ogrzanej kabiny, nie zimna na dworze.
+ if(conf.car)return (conf.cabin==='cool'?2.2:conf.cabin==='hot'?1.05:1.55)+(conf.baby?.1:0);
+ const f=conf.feels;
+ let t=f>=27?.55:f>=23?.9:f>=18?1.35:f>=13?1.95:f>=9?2.45:f>=5?2.9:f>=1?3.5:f>=-4?4.15:4.7;
+ if(conf.baby)t+=.3;
+ if(conf.stroller)t+=.2;
+ if(conf.windy)t+=.15;
+ return t;
+}
+function wardrobeHeat(conf,choice){
+ const base=wardrobeOpt(conf,'base',choice.base)?.warmth||0;
+ const middle=wardrobeOpt(conf,'middle',choice.middle)?.warmth||0;
+ const outer=conf.car?0:(wardrobeOpt(conf,'outer',choice.outer)?.warmth||0);
+ const blanket=conf.stroller&&Array.isArray(choice.extras)&&choice.extras.includes('blanket')?.7:0;
+ return base+middle+outer+blanket;
+}
+function wardrobeFindBalance(conf,selection,preserve='base'){
+ const next={...selection,extras:[...(selection.extras||[])]};
+ const mids=conf.groups.find(g=>g.key==='middle').options;
+ const outs=conf.car?[{id:'none',warmth:0}]:conf.groups.find(g=>g.key==='outer').options;
+ const target=wardrobeTarget(conf);
+ let best=null;
+ for(const middle of mids)for(const outer of outs){
+   if(preserve==='middle'&&middle.id!==next.middle)continue;
+   if(preserve==='outer'&&outer.id!==next.outer)continue;
+   const candidate={...next,middle:middle.id,outer:outer.id};
+   const heat=wardrobeHeat(conf,candidate);
+   let penalty=Math.abs(heat-target);
+   // Wybór osłony przed wiatrem/deszczem to osobna potrzeba, niezależna od grubości warstw.
+   if(!conf.car){
+     if(conf.rainy&&outer.id!=='rain')penalty+=.8;
+     if(conf.windy&&!conf.rainy&&outer.id==='none')penalty+=.4;
+     if(outer.id==='winter'&&conf.feels>7)penalty+=2.5;
+     if(outer.id==='winter'&&conf.feels>0)penalty+=.7;
+     if(outer.id==='wind'&&!conf.windy&&!conf.rainy)penalty+=.13;
+     if(outer.id==='rain'&&!conf.rainy)penalty+=.28;
+   }
+   // W aucie priorytetem są cienkie warstwy i swobodnie dopasowane pasy.
+   if(conf.car&&middle.id==='fleece')penalty+=.12;
+   // Niewielka preferencja dla warstwy, którą łatwo zdjąć.
+   if(middle.id==='thick')penalty+=.06;
+   if(best===null||penalty<best.penalty)best={penalty,middle:middle.id,outer:outer.id};
+ }
+ if(best){next.middle=best.middle;next.outer=best.outer}
+ return next;
+}
+function wardrobeAssessment(conf,choice){
+ const need=wardrobeTarget(conf),got=wardrobeHeat(conf,choice),difference=got-need;
+ let kind,title,message;
+ if(difference<-.65){kind='cold';title='Może być za chłodno';message='Zestaw jest raczej lekki. Dodaj cieplejszą bluzę lub warstwę odpowiednią do warunków.'}
+ else if(difference>.65){kind='hot';title='Może być za ciepło';message='Rozważ cieńszą bluzę albo zdjęcie dodatkowej warstwy.'}
+ else{kind='ok';title='Warstwy wstępnie dopasowane';message='Zestaw jest orientacyjnie zbliżony do potrzeb na wybraną pogodę. Kontroluj komfort dziecka.'}
+ if(conf.car)message+=' Ocena dotyczy wybranej temperatury kabiny, nie temperatury zewnętrznej.';
+ const best=wardrobeFindBalance(conf,choice,'base');
+ const changes=[];
+ for(const key of ['middle','outer']){
+   if(conf.car&&key==='outer')continue;
+   if(choice[key]!==best[key])changes.push(`${key==='middle'?'Bluza':'Osłona'}: ${wardrobeOpt(conf,key,best[key])?.name||'—'}`);
+ }
+ if(!changes.length&&kind==='hot')message+=' Jeżeli nie da się zdjąć kolejnej warstwy, wybierz cieńszą bluzeczkę lub body.';
+ if(!changes.length&&kind==='cold')message+=' Rozważ cieplejszy strój podstawowy oraz skrócenie pobytu na zewnątrz.';
+ return {kind,title,message,changes,suggested:best};
+}
+function wardrobeAdjustmentText(conf,oldChoice,newChoice,chosenGroup){
+ const diff=[];
+ for(const key of ['middle','outer']){
+   if(key===chosenGroup||conf.car&&key==='outer'||oldChoice[key]===newChoice[key])continue;
+   diff.push(`${key==='middle'?'bluza':'osłona'} → ${wardrobeOpt(conf,key,newChoice[key])?.name||'brak'}`);
+ }
+ return diff.length?'Dopasowano do wyboru: '+diff.join('; ')+'.':'Przeliczono propozycję. Możesz zmienić dowolny kafelek ręcznie.';
+}
+function wardrobeKey(){return state.childAge+'|'+state.childMode}
+function sanitizeWardrobeChoice(choice,conf){const result={};for(const g of conf.groups){if(g.multiple){result[g.key]=Array.isArray(choice?.[g.key])?[...new Set(choice[g.key])].filter(x=>g.options.some(o=>o.id===x)):conf.defaults[g.key];}else{const v=choice?.[g.key];result[g.key]=g.options.some(o=>o.id===v)?v:conf.defaults[g.key];}}return result}
+function wardrobeCurrent(conf){const key=wardrobeKey();if(state.childDraftKey!==key||!state.childDraft){state.childDraftKey=key;state.childLastAdjustment='';const savedProfile=state.childProfiles&&typeof state.childProfiles==='object'?state.childProfiles[key]:null;state.childDraft=sanitizeWardrobeChoice(savedProfile||conf.defaults,conf);state.childDraftStatus=savedProfile?'saved':'suggested'}else if(state.childDraftStatus==='suggested'){state.childDraft=sanitizeWardrobeChoice(conf.defaults,conf)}else{state.childDraft=sanitizeWardrobeChoice(state.childDraft,conf)}return state.childDraft}
+function wardrobeWarnings(conf,choice){const notes=[];const selected=(k)=>choice[k];
+ if(conf.car){notes.push({alert:true,text:'Fotelik: bez puchowej kurtki i grubego kombinezonu pod pasami. Koc wyłącznie na zapiętych pasach; bez wkładów niezatwierdzonych przez producenta.'});if(selected('head')!=='none')notes.push({alert:false,text:'Po ogrzaniu kabiny zdejmij czapkę i dodatkowe warstwy, aby dziecko się nie przegrzewało.'});}
+ if(conf.stroller)notes.push({alert:false,text:'Wózek musi mieć stały dopływ powietrza. Nigdy nie zasłaniaj budki kocem ani pieluchą.'});
+ if((conf.car?(conf.cabin==='hot'?24:conf.cabin==='cool'?17:21):conf.feels)>=24&&selected('middle')!=='none')notes.push({alert:true,text:'Ciepło: wybrana dodatkowa warstwa może powodować przegrzanie — kontroluj kark i zdejmij ją w razie potrzeby.'});
+ if(conf.feels>=20&&selected('outer')==='winter')notes.push({alert:true,text:'Uwaga: kurtka zimowa przy tej temperaturze może być zbyt ciepła.'});
+ if(conf.feels<6&&!conf.car&&selected('middle')==='none'&&selected('outer')==='none')notes.push({alert:true,text:'Chłodno: bez warstwy ocieplającej na długi pobyt na dworze może być zbyt zimno.'});
+ if(conf.baby)notes.push({alert:false,text:'Niemowlę: oceniaj komfort po karku lub tułowiu, a nie wyłącznie po chłodnych dłoniach. Modyfikuj warstwy na bieżąco.'});
+ return notes;
+}
+function wardrobeSummary(conf,choice){return conf.groups.flatMap(g=>g.multiple?(choice[g.key]||[]).map(id=>g.options.find(o=>o.id===id)?.name).filter(Boolean):[g.options.find(o=>o.id===choice[g.key])?.name].filter(n=>n&&n!=='Bez dodatkowej'&&n!=='Bez kurtki'&&n!=='Bez czapki'&&n!=='Bez dodatkowych'))}
+function wardrobeGroupHTML(group,choice,conf,assessment){const active=choice[group.key];const suggested=assessment?.suggested?.[group.key];return `<section class="wardrobe-group ${group.key==='base'?'base':''} ${group.multiple?'wardrobe-group-extras':''}"><h5>${esc(group.title)}</h5><p>${esc(group.help)}</p><div class="wardrobe-options">${group.options.map(option=>{const checked=group.multiple?active.includes(option.id):active===option.id;const proposed=!group.multiple&&['middle','outer'].includes(group.key)&&suggested===option.id&&!checked;return `<button type="button" class="wardrobe-option" data-wardrobe-group="${group.key}" data-wardrobe-choice="${option.id}" aria-pressed="${checked}" aria-label="${esc(option.name)}"><span class="choice-icon" aria-hidden="true">${option.icon}</span><span class="choice-copy"><strong>${esc(option.name)}</strong><small>${esc(option.detail)}</small>${proposed?'<span class="choice-hint">Zalecana zamiana</span>':''}</span></button>`}).join('')}</div></section>`}
+function renderChildPanel(){
+ const panel=$('childPanel'),forecast=childForecast(),out=childClothes(state.childAge,state.childMode,forecast),demo=forecast?.source==='demo';
+ const conf=out?wardrobeConfig(state.childAge,state.childMode,forecast):null;
+ const choice=conf?wardrobeCurrent(conf):null;
+ const status=state.childDraftStatus==='saved'?'Zapisany własny zestaw':state.childDraftStatus==='edited'?'Zmieniony — niezapisany':'Zestaw proponowany';
+ const summary=conf?wardrobeSummary(conf,choice):[];
+ const assessment=conf?wardrobeAssessment(conf,choice):null;
+ panel.innerHTML=`<div class="child-hero"><div><h3>Ubierz dziecko — warstwy, które reagują na Twój wybór</h3><p>Wybierz bluzeczkę lub pajacyk: pozostałe warstwy dopasują się automatycznie do pogody. Każdą propozycję możesz zmienić.</p></div><div class="child-source-tag">${demo?'DANE DEMO':forecast?'PROGNOZA POGODY':'BRAK DANYCH'}</div></div>
+ <div class="child-controls"><div class="child-control"><label for="childAge">Wiek dziecka</label><select id="childAge">${childOpt(childAges,state.childAge)}</select></div><div class="child-control"><label for="childMode">Gdzie będzie dziecko?</label><select id="childMode">${childOpt(childModes,state.childMode)}</select></div><div class="child-control"><label for="childWhen">Kiedy?</label><select id="childWhen">${childOpt(childWhens,state.childWhen)}</select></div></div>
+ ${state.childMode==='car'?`<div class="child-cabin"><label for="childCabin">Temperatura w samochodzie (wybierz warunki w kabinie)</label><select id="childCabin"><option value="cool" ${state.childCabin==='cool'?'selected':''}>Chłodna kabina (ok. 16–18 °C)</option><option value="warm" ${state.childCabin==='warm'?'selected':''}>Ogrzana kabina (ok. 20–22 °C)</option><option value="hot" ${state.childCabin==='hot'?'selected':''}>Bardzo ciepła kabina (ok. 23–25 °C)</option></select></div>`:''}
+ ${forecast?`<div class="child-weather"><div class="child-weather-stat"><span>Godzina</span>${esc(forecast.hour)}</div><div class="child-weather-stat"><span>Temperatura</span>${num(forecast.temp,1)} °C</div><div class="child-weather-stat"><span>Odczuwalna</span>${num(forecast.feels,1)} °C</div><div class="child-weather-stat"><span>Wiatr</span>${num(forecast.wind,0)} km/h</div><div class="child-weather-stat"><span>Opady</span>${num(forecast.rain,1)} mm</div></div>`:`<div class="child-warning">Brak danych pogodowych. Pobierz prognozę z internetu, aby zobaczyć propozycję ubrania.</div>`}
+ ${conf?`<div class="wardrobe-toolbar"><div><h4>Konfigurator ubrań</h4><p>Zmiana podstawy automatycznie dobiera bluzę i kurtkę. Gdy zmienisz bluzę lub kurtkę, dopasuje pozostałą warstwę.</p></div><div class="wardrobe-actions"><span class="wardrobe-status" id="wardrobeStatus">${esc(status)}</span><button type="button" id="wardrobeReset" class="wardrobe-action">↺ Przywróć propozycję</button><button type="button" id="wardrobeSave" class="wardrobe-action primary">✓ Zapisz mój zestaw</button></div></div><div class="wardrobe-balance ${assessment.kind}" role="status"><div><div class="balance-eyebrow">ORIENTACYJNA OCENA WARSTW</div><strong>${esc(assessment.title)}</strong><p>${esc(assessment.message)}</p>${state.childLastAdjustment?`<div class="balance-auto">↻ ${esc(state.childLastAdjustment)}</div>`:''}${assessment.changes.length?`<div class="balance-change"><span>Lepsze dopasowanie:</span> ${esc(assessment.changes.join(' • '))}</div>`:''}</div><button class="balance-button" type="button" id="wardrobeBalance" ${!assessment.changes.length?'disabled':''}>↻ Dopasuj warstwy</button></div><div class="wardrobe-grid">${conf.groups.map(g=>wardrobeGroupHTML(g,choice,conf,assessment)).join('')}</div><div class="wardrobe-summary"><div class="wardrobe-summary-head"><strong>Twój aktualny zestaw</strong><span>${summary.length} elementów</span></div><div class="wardrobe-summary-chips">${summary.map(name=>`<span class="wardrobe-summary-chip">✓ ${esc(name)}</span>`).join('')}</div><div class="wardrobe-safety">${wardrobeWarnings(conf,choice).map(w=>`<div class="wardrobe-safety-note ${w.alert?'alert':''}">${esc(w.text)}</div>`).join('')}</div></div><div class="child-layout"><div class="child-card"><h4>${esc(out.title)}</h4><p>${esc(out.lead)}</p><p>Podane opcje są orientacyjne. Możesz dobrać bardziej przewiewne lub cieplejsze warstwy zależnie od aktywności i komfortu dziecka.</p></div><div class="child-card"><h4>O czym pamiętać?</h4><div class="child-advice">${out.notices.map(item=>`<div class="tip"><b>${esc(item.heading)}</b>${esc(item.text)}</div>`).join('')}</div></div></div>`:''}
+ <div class="child-disclaimer">To wskazówki orientacyjne — nie diagnoza ani automatyczna ocena przegrzania. Sprawdzaj komfort dziecka i warunki w aucie/wózku. Zapisany zestaw może wymagać zmiany, jeśli pogoda się zmieni. Źródła: <a href="https://www.nhs.uk/best-start-in-life/baby/baby-basics/caring-for-your-baby/how-to-dress-a-newborn/" target="_blank" rel="noopener">NHS</a> i <a href="https://www.healthychildren.org/English/safety-prevention/on-the-go/Pages/Winter-Car-Seat-Safety-Tips.aspx" target="_blank" rel="noopener">AAP</a>.</div>`;
+ for(const [id,key] of [['childAge','childAge'],['childMode','childMode'],['childWhen','childWhen']])$(id).addEventListener('change',ev=>{state[key]=ev.target.value;state.childLastAdjustment='';store('aero-v10-'+key.replace(/[A-Z]/g,x=>'-'+x.toLowerCase()),state[key]);renderChildPanel()});
+ if(!conf)return;
+ $('childCabin')?.addEventListener('change',e=>{state.childCabin=e.target.value;store('aero-v12-child-cabin',state.childCabin);state.childLastAdjustment='Przeliczono strój dla nowej temperatury kabiny.';renderChildPanel()});
+ panel.querySelectorAll('[data-wardrobe-group]').forEach(button=>button.addEventListener('click',()=>{const group=conf.groups.find(g=>g.key===button.dataset.wardrobeGroup);if(!group)return;const id=button.dataset.wardrobeChoice;if(!group.options.some(o=>o.id===id))return;const draft=wardrobeCurrent(conf);const before={...draft,extras:[...(draft.extras||[])]};if(group.multiple){const prior=Array.isArray(draft[group.key])?draft[group.key]:[];draft[group.key]=prior.includes(id)?prior.filter(x=>x!==id):[...prior,id]}else{draft[group.key]=id}
+ if(['base','middle','outer'].includes(group.key))Object.assign(draft,wardrobeFindBalance(conf,draft,group.key));
+ if(group.key==='extras'&&id==='blanket'&&conf.stroller)Object.assign(draft,wardrobeFindBalance(conf,draft,'base'));
+ state.childLastAdjustment=wardrobeAdjustmentText(conf,before,draft,group.key);state.childDraftStatus='edited';renderChildPanel()}));
+ $('wardrobeBalance').addEventListener('click',()=>{const draft=wardrobeCurrent(conf);const before={...draft};Object.assign(draft,wardrobeFindBalance(conf,draft,'base'));state.childLastAdjustment=wardrobeAdjustmentText(conf,before,draft,'base');state.childDraftStatus='edited';renderChildPanel()});
+ $('wardrobeSave').addEventListener('click',()=>{const key=wardrobeKey();state.childProfiles={...state.childProfiles,[key]:sanitizeWardrobeChoice(state.childDraft,conf)};store('aero-v11-child-profiles',state.childProfiles);state.childDraftStatus='saved';state.childLastAdjustment='Zapisano obecny zestaw.';renderChildPanel()});
+ $('wardrobeReset').addEventListener('click',()=>{const key=wardrobeKey();if(state.childProfiles&&Object.prototype.hasOwnProperty.call(state.childProfiles,key)){const copy={...state.childProfiles};delete copy[key];state.childProfiles=copy;store('aero-v11-child-profiles',copy)}state.childDraft=sanitizeWardrobeChoice(conf.defaults,conf);state.childDraftStatus='suggested';state.childLastAdjustment='Przywrócono zestaw dopasowany do pogody.';renderChildPanel()});
 }
 
 function init(){document.querySelectorAll('[data-page]').forEach(b=>b.addEventListener('click',()=>setPage(b.dataset.page)));document.querySelectorAll('[data-metric]').forEach(b=>b.addEventListener('click',()=>setPage(b.dataset.metric)));document.querySelectorAll('[data-range]').forEach(b=>b.addEventListener('click',()=>{const next=+b.dataset.range;if(next===168&&state.range!==168)state.shortStep=state.step;if(state.range===168&&next!==168)state.step=state.shortStep||15;state.range=next;state.selected=0;setRangeAndStep();renderChart();renderSelection()}));document.querySelectorAll('[data-step]').forEach(b=>b.addEventListener('click',()=>{if(b.disabled)return;state.step=+b.dataset.step;setRangeAndStep();renderChart();renderSelection()}));$('unitBtn').addEventListener('click',()=>{state.unit=state.unit==='kmh'?'ms':'kmh';store('aero-v2-unit',state.unit);$('unitBtn').textContent=windUnit();setHero();renderChart();renderSelection()});$('unitBtn').textContent=windUnit();
